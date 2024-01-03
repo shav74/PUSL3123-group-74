@@ -2,7 +2,7 @@
 load fisheriris.mat;
 
 % shuffling the dataset
-rng('default'); % for reproducibility
+rng(3); % for reproducibility
 shuffledIndexes = randperm(length(meas));
 shuffledData = meas(shuffledIndexes,:);
 shuffledTarget = species(shuffledIndexes);
